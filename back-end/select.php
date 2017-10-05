@@ -10,4 +10,4 @@ while($rs = mysqli_fetch_array($sql,MYSQLI_ASSOC)){
     array_push($arr,$rs);
 }
 
-echo json_encode($arr);
+echo json_encode(array('person'=>$arr));
